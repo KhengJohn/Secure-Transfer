@@ -167,6 +167,9 @@ color: #b2b2b2;
 }
 .rate-input-div input{
     border: none;
+    width: 80%;
+    /* padding:05px; */
+    margin: 0;
 }
 .rate-input-div input:focus{
     border: none !important;
