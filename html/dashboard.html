@@ -9,30 +9,181 @@
     <link rel="stylesheet" href="/css/sideMenu.css" />
   </head>
   <body>
+    <div class="app-wrapper">
       <!-- SIDE MENU -->
       <div class="side-menu">
         <div class="side-menu-content">
-        <div class="side-menu-top">
-          <img
-            src="/assets/SecureTransferLogo 1.svg"
-            alt="Secure Transfer Logo"
-          />
-        </div>
-        <div class="side-menu-bottom">
+          <div class="side-menu-top">
+            <img
+              src="/assets/SecureTransferLogo 1.svg"
+              alt="Secure Transfer Logo"
+            />
+          </div>
+          <div class="side-menu-bottom">
             <ul>
-                <li class="nsm-li active"><a class="active" href="http://"><img src="/assets/dashboardIconW.svg" alt="">Dashboard</a></li>
-                <div>
-                <li class="nsm-li"><div><a href="http://"><img src="/assets/dashboardIconB.svg" alt="">Transaction</a></div><img src="/assets/arrow.svg" alt=""></li>
+              <li class="nsm-li active">
+                <a class="active" href="http://"
+                  ><img src="/assets/dashboardIconW.svg" alt="" />Dashboard</a
+                >
+              </li>
+              <div>
+                <li class="nsm-li">
+                  <div>
+                    <a href="http://"
+                      ><img
+                        src="/assets/dashboardIconB.svg"
+                        alt=""
+                      />Transaction</a
+                    >
+                  </div>
+                  <img src="/assets/arrow.svg" alt="" />
+                </li>
                 <div class="sub-menu">
-                    <ul>
-                        <li class="sub-nsm-li"><a href="http://"> <img src="/assets/dashboardIconB.svg" alt="">Send Money</a></li>
-                        <li class="sub-nsm-li"><a href="http://"> <img src="/assets/dashboardIconB.svg" alt="">Transaction History</a></li>
-                    </ul>
+                  <ul>
+                    <li class="sub-nsm-li">
+                      <a href="http://">
+                        <img src="/assets/dashboardIconB.svg" alt="" />Send
+                        Money</a
+                      >
+                    </li>
+                    <li class="sub-nsm-li">
+                      <a href="http://">
+                        <img
+                          src="/assets/dashboardIconB.svg"
+                          alt=""
+                        />Transaction History</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-                </div><li class="nsm-li"><a href="http://"> <img src="/assets/dashboardIconB.svg" alt="">Services</a></li>
+              </div>
+              <li class="nsm-li">
+                <a href="http://">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Services</a
+                >
+              </li>
             </ul>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <!--App Content -->
+      <div class="app-content">
+        <!-- NAV -->
+        <nav>NAV BAr</nav>
+        <!-- Content -->
+        <div class="content-wrapper">
+          <!-- Four Cards -->
+          <div class="xs-row">
+            <div class="xs-card">
+              <div class="xscard-content">
+                <span>Successful Transfer</span>
+                <h4>10</h4>
+              </div>
+              <img src="/assets/successIcon.svg" alt="" />
+            </div>
+            <div class="xs-card">
+              <div class="xscard-content">
+                <span>Pending Transfer</span>
+                <h4>10</h4>
+              </div>
+              <img src="/assets/pendingIcon.svg" alt="" />
+            </div>
+            <div class="xs-card">
+              <div class="xscard-content">
+                <span>Failed Transfer</span>
+                <h4>0</h4>
+              </div>
+              <img src="/assets/failedIcon.svg" alt="" />
+            </div>
+            <div class="xs-card">
+              <div class="xscard-content">
+                <span>Wallet Balance</span>
+                <h4>243,098.00</h4>
+              </div>
+              <img src="/assets/walletIcon.svg" alt="" />
+            </div>
+          </div>
+          <!-- Two Cards -->
+          <div class="qr-row">
+            <div class="quick-links-card">
+              <div class="card-title"><span>Quick Links</span></div>
+              <hr />
+              <div class="card-content">
+                <p>Content</p>
+              </div>
+              <hr />
+            </div>
+            <div class="quick-links-card">
+              <div class="card-title"><span>Rate Calculator</span></div>
+              <hr />
+              <div class="card-content">
+                <div class="rc-card-content">
+                  <div class="display-rate">
+                    <p>XOF 1.00 equals</p>
+                    <span>NGN 1.00</span>
+                  </div>
+                  <div class="rate-converter">
+                    <div class="rate-input-div">
+                      <label>Currency From</label>
+                      <div class="rate-input">
+                        <input type="text" placeholder="1" />
+                        <select name="currency from" id="currency from">
+                          <option value="01">NGN</option>
+                          <option value="01">USD</option>
+                          <option value="01">BNB</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="rate-input-div">
+                      <label>Currency To</label>
+                      <div class="rate-input">
+                        <input type="text" placeholder="1" />
+                        <select name="currency to" id="currency to">
+                          <option value="01">NGN</option>
+                          <option value="01">USD</option>
+                          <option value="01">BNB</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="second-hr" />
+            </div>
+          </div>
+          <!-- Recent Transaction Table -->
+          <div class="table-container">
+            <div class="table-title">Recent Transactions</div>
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Transaction ID</th>
+                <th>Amount</th>
+                <th>Receiver Details</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>13454452</td>
+                <td>$100.00</td>
+                <td>John Doe</td>
+                <td>Completed</td>
+                <td>2023-11-24</td>
+              </tr>
+              <tr>
+                <td>13454452</td>
+                <td>$100.00</td>
+                <td>John Doe</td>
+                <td>Completed</td>
+                <td>2023-11-24</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table></div>
+        </div>
       </div>
     </div>
   </body>
