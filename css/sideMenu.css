@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.side-menu {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.side-menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.side-menu-bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+  margin-left: 0;
+}
+.active {
+  background-color: #713ca4 !important;
+  color: #fff !important;
+}
+.side-menu-bottom ul li {
+  list-style: none;
+  background-color: #fff;
+  width: 220px;
+  height: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.side-menu-bottom ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.sub-menu {
+  background-color: #f8f8f8 !important;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.sub-nsm-li {
+  background-color: #f8f8f8 !important;
+}
+/* #sideMenu.collapsed {
+    width: 50px;
+  } */
+/* 
+#sideMenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#sideMenu a:hover {
+  color: #818181;
+}
+
+#sideMenu .dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#sideMenu .dropdown-container {
+  display: none;
+  background-color: #333;
+  padding-left: 8px;
+}
+
+#sideMenu .dropdown-container a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+#sideMenu.collapsed .dropdown-container {
+  display: none;
+}
+
+#sideMenu.collapsed .dropdown-btn::after {
+  content: "\002B";
+  float: right;
+}
+
+#sideMenu .dropdown-btn::after {
+  content: "\2212";
+  float: right;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+} */

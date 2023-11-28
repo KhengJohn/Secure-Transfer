@@ -1,0 +1,87 @@
+.login-bg {
+  background-image: url("/assets/loginBg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+  width: 100%;
+}
+.register-bg {
+    background-image: url("/assets/loginBg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom:10px ;
+  }
+.LR-container {
+  margin: 50px auto;
+  width: 400px;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 05px;
+}
+.LR-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LR-head img {
+  width: 100px;
+}
+.LR-head p {
+  color: #b2b2b2;
+}
+.LR-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.input-div label {
+  font-size: 15px;
+  }
+.input-div input {
+  padding: 12px;
+}
+.input-div input:focus {
+    border: #713ca4 2px solid;
+  }
+.button-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-div button {
+  padding: 12px 25px;
+  background-color: #713ca4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.button-div button a{
+    text-decoration: none;
+    color: #fff;
+}
+.button-div span {
+  font-size: 12px;
+  color: #b2b2b2;
+}
+.button-div span span a{
+  color: #713ca4;
+  cursor: pointer;
+}
