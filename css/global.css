@@ -65,11 +65,12 @@
   margin-bottom: 25px;
   border: #b2b2b2 solid 1px;
 }
-.beneficiary-content{
-    padding: 0px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.beneficiary-content,
+.support-content {
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .beneficiary-div {
   display: flex;
@@ -87,18 +88,56 @@
   font-size: 12px;
   color: #b2b2b2;
 }
-.b-bank-details{
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
+.b-bank-details {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
 }
 .h-line {
   border-left: #b2b2b2 solid 2px;
   height: 15px;
 }
-.button-div{
-    padding: 0px 20px;
-    margin-top: -10px;
-    margin-bottom: 5px;
+.button-div {
+  padding: 0px 20px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.support-div {
+  padding: 30px;
+}
+.support-divii {
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.support-div-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #fafbfc;
+  border: #b2b2b2 solid 1px;
+}
+.sd-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.question-writeup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.question-writeup p,
+.question-writeup span {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+.question-writeup p {
+  font-weight: 600;
 }
