@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Transfer</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/loginStyle.css" />
+    <link rel="stylesheet" href="/css/sideMenu.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+     <!-- SIDE MENU -->
+     <div class="side-menu">
+      <div class="side-menu-content">
+        <div class="side-menu-top">
+          <img
+            src="/assets/SecureTransferLogo 1.svg"
+            alt="Secure Transfer Logo"
+          />
+        </div>
+        <div class="side-menu-bottom">
+          <ul>
+            <li class="nsm-li active">
+              <a class="active" href="/html/admin/dashboard.html"
+                ><img src="/assets/dashboardIconW.svg" alt="" />Dashboard</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/customerList.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Customer</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/transactionrequests.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Transaction Requests</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/customerList.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Exchange Rates</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/customerList.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <!--App Content -->
+      <div class="app-content">
+        <!-- NAV -->
+        <nav>NAV BAr</nav>
+        <!-- Content -->
+        <div class="content-wrapper">
+          <!-- Four Cards -->
+          <div class="xs-row"></div>
+          <h3>Customer List</h3>
+          <div class="transaction-history">
+            <!-- Transaction History Table -->
+            <div class="table-container">
+              <div class="table-title"><span>Customer List</span> 
+                <div class="search-container">
+                  <input type="text" class="searchInput" id="searchInput" placeholder="Search..." />
+                  <button class="searchButton" id="searchButton">Search</button>
+                </div>
+              </div>
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Contact</th>
+                    <th>Total Transaction Amount</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>13454452</td>
+                    <td>John Doe</td>
+                    <td>07036060982</td>
+                    <td>XOF 1,000,000</td>
+                    <td id="openModalBtn"><img class="action-icon" src="/assets/actionIcon.svg" alt="" srcset=""></td>
+                  </tr>
+                  <tr>
+                    <td>13454452</td>
+                    <td>John Doe</td>
+                    <td>07036060982</td>
+                    <td>XOF 1,000,000</td>
+                    <td><img class="action-icon" src="/assets/actionIcon.svg" alt="" srcset=""></td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                </tbody>
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close" id="closeModalBtn">&times;</span>
+                    <div class="mcc-info-wrapper">
+                      <p  class="mcc-into-title">Customer Information</p>
+                      <div class="mc-customer-info">
+                        <div class="ci-content">
+                          <span>Customer ID</span>
+                          <p>2534424243</p>
+                        </div>
+                        <div class="ci-content">
+                          <span>Customer Name</span>
+                          <p>John Idoko</p>
+                        </div>
+                        <div class="ci-content">
+                          <span>Email</span>
+                          <p>idokojohn42@yahoo.com</p>
+                        </div>
+                        <div class="ci-content">
+                            <span>Phone Number</span>
+                            <p>07036060982</p>
+                          </div>
+                        <div class="ci-content">
+                          <span>Total Transaction</span>
+                          <p>XOF 1,000,000</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mcc-info-wrapper">
+                      <p class="mcc-into-title">Manage Customer</p>
+                      <div class="mc-manage-customer">
+                        <p>Activate Account</p>
+                        <span
+                          >
+                          Do you want to suspend this account</span
+                        >
+                        <div class="group-btn">
+                          <button class="contained-btn">Activate</button> <button class="outlined-btn">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>

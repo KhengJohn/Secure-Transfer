@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Transfer</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/loginStyle.css" />
+    <link rel="stylesheet" href="/css/sideMenu.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+     <!-- SIDE MENU -->
+     <div class="side-menu">
+      <div class="side-menu-content">
+        <div class="side-menu-top">
+          <img
+            src="/assets/SecureTransferLogo 1.svg"
+            alt="Secure Transfer Logo"
+          />
+        </div>
+        <div class="side-menu-bottom">
+          <ul>
+            <li class="nsm-li active">
+              <a class="active" href="/html/admin/dashboard.html"
+                ><img src="/assets/dashboardIconW.svg" alt="" />Dashboard</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/customerList.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Customer</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/transactionrequests.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Transaction Requests</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/customerList.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Exchange Rates</a
+              >
+            </li>
+            <li class="nsm-li">
+              <a href="/html/admin/customerList.html">
+                <img src="/assets/dashboardIconB.svg" alt="" />Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      <!--App Content -->
+      <div class="app-content">
+        <!-- NAV -->
+        <nav>NAV BAr</nav>
+        <!-- Content -->
+        <div class="content-wrapper">
+          <!-- Four Cards -->
+          <div class="xs-row"></div>
+          <h3>Transaction Requests</h3>
+          <div class="transaction-history">
+            <!-- Recent Transaction Table -->
+            <div class="table-container">
+              <div class="table-title">
+                <span>Pending Transaction Request </span>
+                <div class="search-container">
+                  <input
+                    type="text"
+                    class="searchInput"
+                    id="searchInput"
+                    placeholder="Search..."
+                  />
+                  <button class="searchButton" id="searchButton">Search</button>
+                </div>
+              </div>
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Transaction ID</th>
+                    <th>Sender</th>
+                    <th>Recepient Name</th>
+                    <th>Recepient Account No.</th>
+                    <th>Recepient Bank Name</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>13454452</td>
+                    <td>John Idoko</td>
+                    <td>John Doe</td>
+                    <td>023000000000</td>
+                    <td>GT Bank</td>
+                    <td>XOF 200,000</td>
+                    <td id="openModalBtn" class="center">
+                      <img
+                        class="action-icon"
+                        src="/assets/actionIcon.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13454452</td>
+                    <td>John Idoko</td>
+                    <td>John Doe</td>
+                    <td>023000000000</td>
+                    <td>GT Bank</td>
+                    <td>XOF 200,000</td>
+                    <td class="center">
+                      <img
+                        class="action-icon"
+                        src="/assets/actionIcon.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" id="closeModalBtn">&times;</span>
+                      <div class="mcc-info-wrapper">
+                        <p class="mcc-into-title">Sender Detail</p>
+                        <div class="mc-customer-info">
+                          <div class="ci-content">
+                            <span>Customer ID</span>
+                            <p>2534424243</p>
+                          </div>
+                          <div class="ci-content">
+                            <span>Customer Name</span>
+                            <p>David Raphel</p>
+                          </div>
+                          <div class="ci-content">
+                            <span>Email</span>
+                            <p>sender@yahoo.com</p>
+                          </div>
+                          <div class="ci-content">
+                            <span>Phone Number</span>
+                            <p>07036060982</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mcc-info-wrapper">
+                        <p class="mcc-into-title">Transaction Detail</p>
+                        <div class="mc-customer-info">
+                          <div class="ci-content">
+                            <span>Recipient Name </span>
+                            <p>John Idoko</p>
+                          </div>
+                          <div class="ci-content">
+                            <span>Recipients Account No.</span>
+                            <p>0230000000</p>
+                          </div>
+                          <div class="ci-content">
+                            <span>Recipients Bank Name</span>
+                            <p>GT Bank</p>
+                          </div>
+                          <div class="ci-content">
+                            <span>Phone Number</span>
+                            <p>07036060982</p>
+                          </div>
+                          <div class="ci-content">
+                            <span>Amount</span>
+                            <p>XOF 230,000</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mcc-info-wrapper">
+                        <p class="mcc-into-title">Update Transaction</p>
+                        <div class="mc-update-transaction">
+                          <div class="checkbox-group">
+                            <div class="checkbox-div">
+                              <input
+                                type="checkbox"
+                                name="transactionStatus"
+                                id="approveCheckbox"
+                              />
+                              <span
+                                >I have received money and im ready to approve
+                                this transaction</span
+                              >
+                            </div>
+                            <div class="checkbox-div">
+                              <input
+                                type="checkbox"
+                                name="transactionStatus"
+                                id="cancelCheckbox"
+                              />
+                              <span
+                                >I have not received money and im ready to
+                                cancel this transaction</span
+                              >
+                            </div>
+                          </div>
+                          <!-- RECEIVED -->
+                          <div class="contentToToggle" id="contentToToggle">
+                            <div class="mcc-info-wrapper">
+                              <p class="mcc-into-title">Approve Transaction</p>
+                              <div class="mc-manage-customer">
+                                <span>You’re about to send XOF 230,000<br />
+                                  to John Idoko (0230000000)</span
+                                >
+                                <div class="group-btn">
+                                  <button class="contained-btn">
+                                    Send
+                                  </button>
+                                  <button class="outlined-btn">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                               <!--NOT RECEIVED -->
+                               <div class="contentToToggleII" id="contentToToggleII">
+                                <div class="mcc-info-wrapper">
+                                  <p class="mcc-into-title">Cancel Transaction</p>
+                                  <div class="mc-manage-customer">
+                                    <span>You’re about to cancel XOF 230,000<br />
+                                      to John Idoko (0230000000)</span
+                                    >
+                                    <div class="group-btn">
+                                      <button style="background-color: red; border: red solid 1px;" class="contained-btn">
+                                        Proceed
+                                      </button>
+                                      <button class="outlined-btn">Cancel</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>
