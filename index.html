@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Secure Transfer</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/sideMenu.css" />
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
     <!-- NAV -->
@@ -65,7 +67,7 @@
           user-friendly experience for your money transfer needs. Trust us to
           securely connect you with your loved ones across borders.
         </p>
-        <div class="group-btn">   
+        <div class="group-btn">
           <a href="/html/login.html"
             ><button class="outlined-btn">Login</button></a
           >
@@ -118,6 +120,54 @@
         </div>
         <div class="right">
           <img class="" src="/assets/trustusImg.svg" alt="Trust Us Image" />
+        </div>
+      </div>
+    </div>
+    <!-- Exchange Rate Section  -->
+    <div class="exchange-rate-section">
+      <div class="left">
+        <h1>Explore Our <span>Exchange Rates</span></h1>
+        <div class="group-btn">
+          <a class="arrow-btn" href="/html/login.html"
+            ><button class="underlined-btn">Continue</button> <img src="/assets/continueArrow.svg" alt="" srcset=""></a
+          >
+        </div>
+      </div>
+      <div class="right">
+        <div class="quick-links-card">
+          <div class="mt mb">
+          <div class="card-content">
+            <div class="rc-card-content">
+              <div class="display-rate">
+                <p>XOF 1.00 equals</p>
+                <span>NGN 1.00</span>
+              </div>
+              <div class="rate-converter">
+                <div class="rate-input-div">
+                  <label>You Send</label>
+                  <div class="rate-input">
+                    <input type="text" placeholder="1" />
+                    <select name="currency from" id="currency from">
+                      <option value="01">NGN</option>
+                      <option value="01">USD</option>
+                      <option value="01">BNB</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="rate-input-div">
+                  <label>They Get</label>
+                  <div class="rate-input">
+                    <input type="text" placeholder="1" />
+                    <select name="currency to" id="currency to">
+                      <option value="01">NGN</option>
+                      <option value="01">USD</option>
+                      <option value="01">BNB</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></div>
         </div>
       </div>
     </div>

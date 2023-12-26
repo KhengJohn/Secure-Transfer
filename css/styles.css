@@ -234,6 +234,29 @@ nav {
   font-size: 16px;
   cursor: pointer;
 }
+.underlined-btn {
+  all: unset;
+  /* padding: 15px 35px; */
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.arrow-btn{
+  display: flex;
+  justify-content: center;
+transition: 1s;
+gap: 7px;
+}.arrow-btn:hover{
+  gap: 20px;
+  }
+.arrow-btn img{
+width: 24px;
+}
+/* .arrow-btn img:hover{
+  width: 24px;
+  padding-left: 20px;
+  } */
 .hero-right {
   display: flex;
   justify-content: center;
@@ -325,6 +348,28 @@ nav {
 .ca-card h3 {
   margin-bottom: 0px;
 }
+.exchange-rate-section{
+  padding: 50px 100px;
+  background-image: url("/assets/purple-bg.svg");
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-gap: 90px;
+  overflow: hidden;
+}
+.exchange-rate-section .left{
+display: flex;
+flex-direction: column;
+gap: 0;
+align-items: start;
+  }
+.exchange-rate-section .left h1{
+color: white;
+margin-bottom: 0;
+}
+.exchange-rate-section .left h1 span{
+  color: #d2ae6d;
+  }
 .no-worry {
   padding: 10px 100px;
   background-image: url("/assets/purple-bg.svg");
