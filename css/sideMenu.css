@@ -173,6 +173,7 @@ color: #b2b2b2;
 }
 .rate-input-div input:focus{
     border: none !important;
+    outline: none;
 }
 .rate-input{
     background-color: #fff;
