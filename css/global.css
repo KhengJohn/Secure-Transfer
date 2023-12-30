@@ -1,3 +1,12 @@
+@media screen and (min-width: 68px) and (max-width: 800px) {
+  .card-container-wrapper {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+}
+
 .card-container-wrapper {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -331,8 +340,9 @@ font-size: 12px;
   font-size:13px;
   /* background-color:#FCDFAE1A; */
   color:#000;
-  padding:10px 0;
+  padding:10px 20px;
   border-radius: 0 0 10px 10px;
+  border-top: #C0C7DD solid 1px;
 }
 .pagination-container button{
   all: unset;
@@ -351,4 +361,85 @@ font-size: 12px;
 
 .mb{
   padding-bottom: 20px;
+}
+
+/* Reset some default styles for the table */
+.table-container{
+  border: #C0C7DD 1px solid;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: auto;
+  width: 100%;
+}
+.table-title{
+display: flex;
+justify-content: space-between;
+align-items: center;
+  padding: 13px;
+  font-size: 14px;
+}
+.table-title span{
+font-size: 15px;
+color: #000;
+font-weight: 600;
+}
+.search-container {
+text-align: center;
+width: 290px;
+margin-left: auto;
+}
+
+.searchInput {
+padding: 06px;
+width:70%;
+border-radius: 4px;
+}
+
+.searchButton {
+padding: 06px;
+background-color: #52246d;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.searchButton:hover {
+background-color: #562e6d;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: small;
+
+}
+
+/* Style for table headings */
+th {
+  background-color: #fff;
+  padding: 13px;
+  text-align: left;
+  border-top: 1px solid #C0C7DD;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  color: #454147;
+}
+
+/* Style for table data cells */
+td {
+  padding: 13px;
+  color: #333;
+  border-top: 1px solid #C0C7DD; /* Add a top border to separate rows */
+}
+
+/* Remove borders for the first row (headings) and last cell in each row */
+th:first-child,
+td:last-child {
+  border-left: none;
+}
+
+/* Remove borders for the last cell in the last row */
+tbody tr:last-child td {
+  border-bottom: none;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/loginStyle.css" />
     <link rel="stylesheet" href="/css/sideMenu.css" />
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
     <div class="app-wrapper">
@@ -33,7 +34,8 @@
               </li>
               <li class="nsm-li">
                 <a href="/html/transactionhistory.html">
-                  <img src="/assets/dashboardIconB.svg" alt="" />Transaction History</a
+                  <img src="/assets/dashboardIconB.svg" alt="" />Transaction
+                  History</a
                 >
               </li>
               <li class="nsm-li">
@@ -184,14 +186,14 @@
               <tbody>
                 <tr>
                   <td>13454452</td>
-                  <td>$100.00</td>
+                  <td>N100.00</td>
                   <td>John Doe</td>
                   <td>Completed</td>
                   <td>2023-11-24</td>
                 </tr>
                 <tr>
                   <td>13454452</td>
-                  <td>$100.00</td>
+                  <td>N100.00</td>
                   <td>John Doe</td>
                   <td>Completed</td>
                   <td>2023-11-24</td>
@@ -199,6 +201,23 @@
                 <!-- Add more rows as needed -->
               </tbody>
             </table>
+            <div class="pagination-container">
+              <span>Rows per page: </span>
+              <select
+              id="pageDropdown"
+              value="1"
+              style="border:none; width:17px;"
+            >
+                  <option value="1">
+                   1
+                  </option>
+            </select>
+            <label htmlFor="pageDropdown">
+              1 of 1
+            </label>
+            <button ><img class="left-arrow" src="/assets/arrow.svg" alt="" srcset=""></button>
+            <button><img class="right-arrow" src="/assets/arrow.svg" alt="" srcset=""></button>
+            </div>
           </div>
         </div>
       </div>
