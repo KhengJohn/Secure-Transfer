@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
-
+// TOGGLE CHECKBOX IN TRANSACTION REQUEST PAGE
   document.addEventListener('DOMContentLoaded', function () {
     const toggleCheckbox = document.getElementById('toggleCheckbox');
     const contentToToggle = document.getElementById('contentToToggle');
@@ -52,4 +52,3 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-  
