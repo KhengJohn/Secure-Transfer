@@ -11,14 +11,17 @@
   </head>
   <body>
     <div class="app-wrapper">
-    <!-- SIDE MENU -->
-    <div class="side-menu">
+      <!-- SIDE MENU -->
+      <div class="side-menu">
         <div class="side-menu-content">
           <div class="side-menu-top">
             <img
               src="/assets/SecureTransferLogo 1.svg"
               alt="Secure Transfer Logo"
             />
+            <button id="toggle-close">
+              <img src="/assets/closeArrow.svg" alt="close" />
+            </button>
           </div>
           <div class="side-menu-bottom">
             <ul>
@@ -34,12 +37,14 @@
               </li>
               <li class="nsm-li">
                 <a href="/html/admin/transactionrequests.html">
-                  <img src="/assets/dashboardIconB.svg" alt="" />Transaction Requests</a
+                  <img src="/assets/dashboardIconB.svg" alt="" />Transaction
+                  Requests</a
                 >
               </li>
               <li class="nsm-li">
                 <a href="/html/admin/exchangerate.html">
-                  <img src="/assets/dashboardIconB.svg" alt="" />Exchange Rates</a
+                  <img src="/assets/dashboardIconB.svg" alt="" />Exchange
+                  Rates</a
                 >
               </li>
               <li class="nsm-li">
@@ -56,14 +61,19 @@
       <div class="app-content">
         <!-- NAV -->
         <div class="inner-nav">
+          <button id="toggle-btn">
+            <img src="/assets/hamburgerIcon.svg" alt="hamburger" />
+          </button>
           <div class="nav-profile dropdown-nav-head">
             <img src="/assets/profileIcon.svg" alt="" srcset="" />
-        
-          <!-- Dropdown Content -->
-          <div class="dropdown-nav-content">
-            <div class="ndc-div">
-            <a href="/html/login.html">Logout</a>
-          </div>  </div></div>
+
+            <!-- Dropdown Content -->
+            <div class="dropdown-nav-content">
+              <div class="ndc-div">
+                <a href="/html/login.html">Logout</a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Content -->
         <div class="content-wrapper">
@@ -100,13 +110,13 @@
                   <input type="text" placeholder="Enter rate" />
                 </div>
                 <div class="cc-input-div">
-                    <label for="Subject">Fee</label>
-                    <input type="text" placeholder="Enter fee" />
-                  </div>
+                  <label for="Subject">Fee</label>
+                  <input type="text" placeholder="Enter fee" />
+                </div>
                 <div class="er-display">
-                    <span>XOF 1.00 equals</span>
-                    <h2>NGN TO 1.00</h2>
-                    <span>FEE: XOF 2.43%</span>
+                  <span>XOF 1.00 equals</span>
+                  <h2>NGN TO 1.00</h2>
+                  <span>FEE: XOF 2.43%</span>
                 </div>
                 <button class="cc-button">Proceed</button>
               </div>

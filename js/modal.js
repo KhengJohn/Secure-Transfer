@@ -52,3 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+    // Function to toggle the side menu
+    function toggleSideMenu() {
+      var sideMenu = document.querySelector('.side-menu');
+      sideMenu.classList.toggle('open');
+    }
+  
+    // Event listener for the hamburger button
+    document.getElementById('toggle-btn').addEventListener('click', toggleSideMenu);
+    document.getElementById('toggle-close').addEventListener('click', toggleSideMenu);

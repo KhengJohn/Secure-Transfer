@@ -5,6 +5,15 @@
     width: 100%;
     gap: 30px;
   }
+
+  .inner-nav {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 20px 30px;
+    height: 50px;
+    background-color: #fff;
+  }
 }
 
 .card-container-wrapper {

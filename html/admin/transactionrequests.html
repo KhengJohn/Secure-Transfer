@@ -11,59 +11,69 @@
   </head>
   <body>
     <div class="app-wrapper">
-    <!-- SIDE MENU -->
-    <div class="side-menu">
-      <div class="side-menu-content">
-        <div class="side-menu-top">
-          <img
-            src="/assets/SecureTransferLogo 1.svg"
-            alt="Secure Transfer Logo"
-          />
-        </div>
-        <div class="side-menu-bottom">
-          <ul>
-            <li class="nsm-li active">
-              <a class="active" href="/html/admin/dashboard.html"
-                ><img src="/assets/dashboardIconW.svg" alt="" />Dashboard</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/customerList.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Customer</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/transactionrequests.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Transaction Requests</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/exchangerate.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Exchange Rates</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/customerList.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Support</a
-              >
-            </li>
-          </ul>
+      <!-- SIDE MENU -->
+      <div class="side-menu">
+        <div class="side-menu-content">
+          <div class="side-menu-top">
+            <img
+              src="/assets/SecureTransferLogo 1.svg"
+              alt="Secure Transfer Logo"
+            />
+            <button id="toggle-close">
+              <img src="/assets/closeArrow.svg" alt="close" />
+            </button>
+          </div>
+          <div class="side-menu-bottom">
+            <ul>
+              <li class="nsm-li active">
+                <a class="active" href="/html/admin/dashboard.html"
+                  ><img src="/assets/dashboardIconW.svg" alt="" />Dashboard</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/customerList.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Customer</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/transactionrequests.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Transaction
+                  Requests</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/exchangerate.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Exchange
+                  Rates</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/customerList.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Support</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
       <!--App Content -->
       <div class="app-content">
         <!-- NAV -->
         <div class="inner-nav">
+          <button id="toggle-btn">
+            <img src="/assets/hamburgerIcon.svg" alt="hamburger" />
+          </button>
           <div class="nav-profile dropdown-nav-head">
             <img src="/assets/profileIcon.svg" alt="" srcset="" />
-        
-          <!-- Dropdown Content -->
-          <div class="dropdown-nav-content">
-            <div class="ndc-div">
-            <a href="/html/login.html">Logout</a>
-          </div>  </div></div>
+
+            <!-- Dropdown Content -->
+            <div class="dropdown-nav-content">
+              <div class="ndc-div">
+                <a href="/html/login.html">Logout</a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Content -->
         <div class="content-wrapper">
@@ -212,35 +222,41 @@
                             <div class="mcc-info-wrapper">
                               <p class="mcc-into-title">Approve Transaction</p>
                               <div class="mc-manage-customer">
-                                <span>You’re about to send XOF 230,000<br />
+                                <span
+                                  >You’re about to send XOF 230,000<br />
                                   to John Idoko (0230000000)</span
                                 >
                                 <div class="group-btn">
-                                  <button class="contained-btn">
-                                    Send
+                                  <button class="contained-btn">Send</button>
+                                  <button class="outlined-btn">Cancel</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--NOT RECEIVED -->
+                          <div class="contentToToggleII" id="contentToToggleII">
+                            <div class="mcc-info-wrapper">
+                              <p class="mcc-into-title">Cancel Transaction</p>
+                              <div class="mc-manage-customer">
+                                <span
+                                  >You’re about to cancel XOF 230,000<br />
+                                  to John Idoko (0230000000)</span
+                                >
+                                <div class="group-btn">
+                                  <button
+                                    style="
+                                      background-color: red;
+                                      border: red solid 1px;
+                                    "
+                                    class="contained-btn"
+                                  >
+                                    Proceed
                                   </button>
                                   <button class="outlined-btn">Cancel</button>
                                 </div>
                               </div>
                             </div>
                           </div>
-                               <!--NOT RECEIVED -->
-                               <div class="contentToToggleII" id="contentToToggleII">
-                                <div class="mcc-info-wrapper">
-                                  <p class="mcc-into-title">Cancel Transaction</p>
-                                  <div class="mc-manage-customer">
-                                    <span>You’re about to cancel XOF 230,000<br />
-                                      to John Idoko (0230000000)</span
-                                    >
-                                    <div class="group-btn">
-                                      <button style="background-color: red; border: red solid 1px;" class="contained-btn">
-                                        Proceed
-                                      </button>
-                                      <button class="outlined-btn">Cancel</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
                         </div>
                       </div>
                     </div>
@@ -250,19 +266,29 @@
               <div class="pagination-container">
                 <span>Rows per page: </span>
                 <select
-                id="pageDropdown"
-                value="1"
-                style="border:none; width:17px;"
-              >
-                    <option value="1">
-                     1
-                    </option>
-              </select>
-              <label htmlFor="pageDropdown">
-                1 of 1
-              </label>
-              <button ><img class="left-arrow" src="/assets/arrow.svg" alt="" srcset=""></button>
-              <button><img class="right-arrow" src="/assets/arrow.svg" alt="" srcset=""></button>
+                  id="pageDropdown"
+                  value="1"
+                  style="border: none; width: 17px"
+                >
+                  <option value="1">1</option>
+                </select>
+                <label htmlFor="pageDropdown"> 1 of 1 </label>
+                <button>
+                  <img
+                    class="left-arrow"
+                    src="/assets/arrow.svg"
+                    alt=""
+                    srcset=""
+                  />
+                </button>
+                <button>
+                  <img
+                    class="right-arrow"
+                    src="/assets/arrow.svg"
+                    alt=""
+                    srcset=""
+                  />
+                </button>
               </div>
             </div>
           </div>

@@ -11,58 +11,68 @@
   </head>
   <body>
     <div class="app-wrapper">
-    <!-- SIDE MENU -->
-    <div class="side-menu">
-      <div class="side-menu-content">
-        <div class="side-menu-top">
-          <img
-            src="/assets/SecureTransferLogo 1.svg"
-            alt="Secure Transfer Logo"
-          />
-        </div>
-        <div class="side-menu-bottom">
-          <ul>
-            <li class="nsm-li active">
-              <a class="active" href="/html/admin/dashboard.html"
-                ><img src="/assets/dashboardIconW.svg" alt="" />Dashboard</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/customerList.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Customer</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/transactionrequests.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Transaction Requests</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/exchangerate.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Exchange Rates</a
-              >
-            </li>
-            <li class="nsm-li">
-              <a href="/html/admin/customerList.html">
-                <img src="/assets/dashboardIconB.svg" alt="" />Support</a
-              >
-            </li>
-          </ul>
+      <!-- SIDE MENU -->
+      <div class="side-menu">
+        <div class="side-menu-content">
+          <div class="side-menu-top">
+            <img
+              src="/assets/SecureTransferLogo 1.svg"
+              alt="Secure Transfer Logo"
+            />
+            <button id="toggle-close">
+              <img src="/assets/closeArrow.svg" alt="close" />
+            </button>
+          </div>
+          <div class="side-menu-bottom">
+            <ul>
+              <li class="nsm-li active">
+                <a class="active" href="/html/admin/dashboard.html"
+                  ><img src="/assets/dashboardIconW.svg" alt="" />Dashboard</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/customerList.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Customer</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/transactionrequests.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Transaction
+                  Requests</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/exchangerate.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Exchange
+                  Rates</a
+                >
+              </li>
+              <li class="nsm-li">
+                <a href="/html/admin/customerList.html">
+                  <img src="/assets/dashboardIconB.svg" alt="" />Support</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
       <!--App Content -->
       <div class="app-content">
         <!-- NAV -->
         <div class="inner-nav">
+          <button id="toggle-btn">
+            <img src="/assets/hamburgerIcon.svg" alt="hamburger" />
+          </button>
           <div class="nav-profile dropdown-nav-head">
             <img src="/assets/profileIcon.svg" alt="" srcset="" />
-        
-          <!-- Dropdown Content -->
-          <div class="dropdown-nav-content">
-            <div class="ndc-div">
-            <a href="/html/login.html">Logout</a>
-          </div>  </div></div>
+
+            <!-- Dropdown Content -->
+            <div class="dropdown-nav-content">
+              <div class="ndc-div">
+                <a href="/html/login.html">Logout</a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Content -->
         <div class="content-wrapper">
@@ -72,9 +82,15 @@
           <div class="transaction-history">
             <!-- Transaction History Table -->
             <div class="table-container">
-              <div class="table-title"><span>Customer List</span> 
+              <div class="table-title">
+                <span>Customer List</span>
                 <div class="search-container">
-                  <input type="text" class="searchInput" id="searchInput" placeholder="Search..." />
+                  <input
+                    type="text"
+                    class="searchInput"
+                    id="searchInput"
+                    placeholder="Search..."
+                  />
                   <button class="searchButton" id="searchButton">Search</button>
                 </div>
               </div>
@@ -94,14 +110,28 @@
                     <td>John Doe</td>
                     <td>07036060982</td>
                     <td>XOF 1,000,000</td>
-                    <td id="openModalBtn"><img class="action-icon" src="/assets/actionIcon.svg" alt="" srcset=""></td>
+                    <td id="openModalBtn">
+                      <img
+                        class="action-icon"
+                        src="/assets/actionIcon.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </td>
                   </tr>
                   <tr>
                     <td>13454452</td>
                     <td>John Doe</td>
                     <td>07036060982</td>
                     <td>XOF 1,000,000</td>
-                    <td><img class="action-icon" src="/assets/actionIcon.svg" alt="" srcset=""></td>
+                    <td>
+                      <img
+                        class="action-icon"
+                        src="/assets/actionIcon.svg"
+                        alt=""
+                        srcset=""
+                      />
+                    </td>
                   </tr>
                   <!-- Add more rows as needed -->
                 </tbody>
@@ -109,7 +139,7 @@
                   <div class="modal-content">
                     <span class="close" id="closeModalBtn">&times;</span>
                     <div class="mcc-info-wrapper">
-                      <p  class="mcc-into-title">Customer Information</p>
+                      <p class="mcc-into-title">Customer Information</p>
                       <div class="mc-customer-info">
                         <div class="ci-content">
                           <span>Customer ID</span>
@@ -124,9 +154,9 @@
                           <p>idokojohn42@yahoo.com</p>
                         </div>
                         <div class="ci-content">
-                            <span>Phone Number</span>
-                            <p>07036060982</p>
-                          </div>
+                          <span>Phone Number</span>
+                          <p>07036060982</p>
+                        </div>
                         <div class="ci-content">
                           <span>Total Transaction</span>
                           <p>XOF 1,000,000</p>
@@ -137,12 +167,10 @@
                       <p class="mcc-into-title">Manage Customer</p>
                       <div class="mc-manage-customer">
                         <p>Activate Account</p>
-                        <span
-                          >
-                          Do you want to suspend this account</span
-                        >
+                        <span> Do you want to suspend this account</span>
                         <div class="group-btn">
-                          <button class="contained-btn">Activate</button> <button class="outlined-btn">Cancel</button>
+                          <button class="contained-btn">Activate</button>
+                          <button class="outlined-btn">Cancel</button>
                         </div>
                       </div>
                     </div>
@@ -152,19 +180,29 @@
               <div class="pagination-container">
                 <span>Rows per page: </span>
                 <select
-                id="pageDropdown"
-                value="1"
-                style="border:none; width:17px;"
-              >
-                    <option value="1">
-                     1
-                    </option>
-              </select>
-              <label htmlFor="pageDropdown">
-                1 of 1
-              </label>
-              <button ><img class="left-arrow" src="/assets/arrow.svg" alt="" srcset=""></button>
-              <button><img class="right-arrow" src="/assets/arrow.svg" alt="" srcset=""></button>
+                  id="pageDropdown"
+                  value="1"
+                  style="border: none; width: 17px"
+                >
+                  <option value="1">1</option>
+                </select>
+                <label htmlFor="pageDropdown"> 1 of 1 </label>
+                <button>
+                  <img
+                    class="left-arrow"
+                    src="/assets/arrow.svg"
+                    alt=""
+                    srcset=""
+                  />
+                </button>
+                <button>
+                  <img
+                    class="right-arrow"
+                    src="/assets/arrow.svg"
+                    alt=""
+                    srcset=""
+                  />
+                </button>
               </div>
             </div>
           </div>
