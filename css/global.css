@@ -494,6 +494,7 @@ tbody tr:last-child td {
 .setting-content.active-setting-content {
   display: block;
 }
+
   /* Hide the default file input button */
   input[type="file"] {
     display: none;
